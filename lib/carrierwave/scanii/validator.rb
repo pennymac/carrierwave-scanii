@@ -18,7 +18,7 @@ module CarrierWave
         response = conn.post '/v2.1/files', { :file => Faraday::UploadIO.new(value.path, value.content_type) }
 
         json_response = JSON.parse(response.body)
-        Rails.logger.debug response.inspect
+
         if json_response["findings"].length > 0
           record.errors.add attribute, :scanii_unsafe
         end
