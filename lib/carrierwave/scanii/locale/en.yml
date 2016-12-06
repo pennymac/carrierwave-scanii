@@ -1,5 +1,5 @@
 en:
   errors:
     messages:
-      scanii_error: 'could not be processed'
-      scanii_unsafe: 'could not be accepted'
+      scanii_error: 'The uploaded file could not be processed'
+      scanii_unsafe: 'The uploaded file could not be processed'
